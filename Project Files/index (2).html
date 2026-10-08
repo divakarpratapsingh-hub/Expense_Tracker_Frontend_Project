@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Expense Tracker</h1>
+        <p class="subtitle">Record your daily expenses and keep track of your spending.</p>
+
+        <!-- Section 1: Add Expense -->
+        <div class="box">
+            <h2>Add New Expense</h2>
+
+            <form>
+                <label for="details">Expense Details</label>
+                <input type="text" id="details" placeholder="e.g. Lunch at canteen">
+
+                <label for="amount">Amount (₹)</label>
+                <input type="number" id="amount" placeholder="e.g. 150">
+
+                <label for="category">Category</label>
+                <select id="category">
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                    <option>Other</option>
+                </select>
+
+                <button type="button" class="add-btn">Add Expense</button>
+            </form>
+        </div>
+
+        <!-- Section 2: Expense List -->
+        <div class="box">
+            <h2>Your Expenses</h2>
+
+            <table>
+                <tr>
+                    <th>Details</th>
+                    <th>Category</th>
+                    <th>Amount (₹)</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Lunch at canteen</td>
+                    <td>Food</td>
+                    <td>150</td>
+                    <td><button type="button" class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Auto fare</td>
+                    <td>Travel</td>
+                    <td>80</td>
+                    <td><button type="button" class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Notebook and pens</td>
+                    <td>Shopping</td>
+                    <td>120</td>
+                    <td><button type="button" class="delete-btn">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Section 3: Total -->
+        <div class="box total-box">
+            <h2>Total Spending</h2>
+            <p class="total">₹ 350</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* ---------- General page style ---------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ---------- Main container ---------- */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+/* ---------- Boxes (cards) ---------- */
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    margin-top: 0;
+    color: #34495e;
+    font-size: 20px;
+}
+
+/* ---------- Form ---------- */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* ---------- Buttons ---------- */
+.add-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #1e8449;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ---------- Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #ecf0f1;
+}
+
+/* ---------- Total ---------- */
+.total-box {
+    text-align: center;
+}
+
+.total {
+    font-size: 32px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 0;
+}
