@@ -1,0 +1,162 @@
+# JavaScript  theory assignment
+
+
+1. What is the difference between frontend and backend JavaScript?
+
+Answer:
+
+Frontend JavaScript is used to make a website interactive. It runs in the browser and handles button clicks, form validation, and changing webpage content.
+
+Backend JavaScript runs on the server using Node.js. It handles data, login systems, databases, and server requests.
+
+For example, frontend JavaScript checks a signup form, while backend JavaScript saves the user's information in a database.
+
+2. What is DOM?
+
+Answer:
+
+DOM stands for Document Object Model. It represents an HTML page as a tree of objects. JavaScript uses the DOM to access and change the content, style, and elements of a webpage.
+
+For example, JavaScript can change the text of a heading using the DOM.
+
+3. What is an event in JavaScript?
+
+Answer:
+
+An event is an action that happens on a webpage. It can be caused by a user or the browser.
+
+Examples of events are clicking a button, typing in an input field, and submitting a form.
+
+JavaScript can perform a specific task when an event occurs.
+
+4. What is the event loop in JavaScript?
+
+Answer:
+
+The event loop is a mechanism that helps JavaScript handle asynchronous tasks. JavaScript executes synchronous code first. When the call stack becomes empty, the event loop helps execute pending callbacks.
+
+For example, when we use setTimeout(), its callback runs later, after the synchronous code has finished.
+
+5. What is hoisting in JavaScript?
+
+Answer:
+
+Hoisting is JavaScript's behavior of processing declarations before executing the code. Because of this, some variables and functions can be accessed before their declaration appears in the code.
+
+For example, a variable declared using var gives undefined if we access it before its assignment. However, let and const cannot be accessed before their declaration.
+
+### 6. What is event bubbling?
+
+Answer:
+
+Event bubbling is a process in which an event starts from the element where it occurs and then moves to its parent elements.
+
+For example, if we click a button inside a div, the click event can move from the button to the div and then to other parent elements.
+
+It is useful for handling events on parent elements.
+
+7. What is the difference between named function, anonymous function, and arrow function?
+
+Answer:
+
+A named function has a name and can be called using that name.
+
+Example:
+function greet() {
+    console.log("Hello");
+}
+
+An anonymous function does not have its own function name. It can be stored in a variable or passed as a callback.
+
+Example:
+let greet = function() {
+    console.log("Hello");
+};
+
+An arrow function uses the => symbol and provides a shorter way to write a function.
+
+Example:
+let greet = () => {
+    console.log("Hello");
+};
+
+The main difference is their syntax and how they handle the this keyword.
+
+8. Explain for-of and for-in loop.
+
+Answer:
+
+The for-of loop is used to access the values of an iterable, such as an array or string.
+
+Example:
+let fruits = ["Apple", "Mango", "Banana"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+The for-in loop is used to access the keys or property names of an object.
+
+Example:
+let student = {
+    name: "Rahul",
+    age: 20
+};
+
+for (let key in student) {
+    console.log(key);
+}
+
+The main difference is that for-of gives values, while for-in gives keys or property names.
+
+9. Explain any five array methods.
+
+Answer:
+
+JavaScript provides different array methods to perform operations on array elements.
+
+1. push(): It adds an element at the end of an array.
+
+Example: arr.push(10);
+
+2. pop(): It removes the last element from an array.
+
+Example: arr.pop();
+
+3. shift(): It removes the first element from an array.
+
+Example: arr.shift();
+
+4. unshift(): It adds an element at the beginning of an array.
+
+Example: arr.unshift(5);
+
+5. map(): It creates a new array by applying a function to each element.
+
+Example:
+let numbers = [1, 2, 3];
+let result = numbers.map(n => n * 2);
+
+Output: [2, 4, 6]
+
+10. What is a callback function in JavaScript?
+
+Answer:
+
+A callback function is a function that is passed as an argument to another function. The receiving function can call it when needed.
+
+Example:
+
+function greet(name) {
+    console.log("Hello " + name);
+}
+
+function processUser(callback) {
+    callback("Rahul");
+}
+
+processUser(greet);
+
+Output: Hello Rahul
+
+Here, the greet function is passed to processUser as a callback. The processUser function calls it with "Rahul" as the argument.
