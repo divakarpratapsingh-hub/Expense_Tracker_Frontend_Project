@@ -1,0 +1,42 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body button {
+    margin-top: auto;
+}
+
+.cart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px lightgray;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+button {
+    cursor: pointer;
+}
